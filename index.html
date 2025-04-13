@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Kanban</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mini Kanban</h1>
+  <form id="taskForm">
+    <input type="text" id="taskTitle" placeholder="Nouvelle tâche..." required />
+    <button type="submit">Ajouter</button>
+  </form>
+
+  <div class="board">
+    <div class="column" data-status="TODO">
+      <h2>TODO</h2>
+      <div class="task-list" id="todoList"></div>
+    </div>
+    <div class="column" data-status="IN PROGRESS">
+      <h2>IN PROGRESS</h2>
+      <div class="task-list" id="progressList"></div>
+    </div>
+    <div class="column" data-status="DONE">
+      <h2>DONE</h2>
+      <div class="task-list" id="doneList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
